@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.board {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(34, 34, 34);
+}
+
+.board-container {
+  width: 600px;
+  height: 600px;
+}
+
+.square {
+  width: 12.5%;
+  height: 12.5%;
+}
+.black-square {
+  background: #b59963;
+}
+
+.white-square {
+  background: #f0d9b5;
+}
+
+.board-square {
+  width: 100%;
+  height: 100%;
+}
+
+.piece-container {
+  cursor: grab;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.piece {
+  max-width: 70%;
+  max-height: 70%;
+}
+.flipping {
+  width: 100px;
+  align-items: left;
+  height: 50px;
+}
+.dangerVisible {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  background-color: red;
+  height: 50px;
+}
+.dangerNonVisible {
+  display: none;
+}
+.flip-danger {
+  display: flex;
+}
+.danger-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20%;
+}
+
+/* to mark all possible move squares */
+.paras-red {
+  opacity: 0.75;
+}
